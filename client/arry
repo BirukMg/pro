@@ -1,0 +1,231 @@
+"Appliances","Clothing","Collecting/art","Computers","Electronices","Furniture","musical instruments","Helth & beauty","Sporting Goods","Garge/yard sales","Free","other"
+"Auto parts","Accessories","Boats","Cars","Motorscycles","RVs","Trucks","Vans","other"
+
+"Apartements","Homes","Rooms for rent","Short term rentals","Vacation rentals"
+
+"Automotive","Computer Repair","Creative","Events","Financial","Home Service","Moving & Labor","Legal","Lessons & Training ","Real Estate Agents","Skilled Trades","Other Businesses"
+
+"Forestry&Farm","Equipments","Garden Supplies","yard","Heavy Equipment","others","Tractors"
+
+
+
+"Activities","Artists","Childcare","Classes","General","Groups","Local News","Lost+Found","Missed connection","Musicians","Pets","Politics","Rants & raves","Rideshare","Volunteers"
+
+"Legal","Linux","Manners","Marriage","Money","Music","Open","Outdoor","Parent","Pets","Philos","Photo","Politics","Psych","Recover","Eligion","Rofo","Science","Spirit","Sports","Super","Tax","Travel","Tv","Vegan","Words","Writing"
+
+
+
+
+"Android","Apple","Arts","Atheist","Autos","Beauty","Bikes","Celebs","Comp","Cosmos","Diet","Divorce","Dying","Eco","Feedbk","Film","Fixit","Food","Frugal","Gaming","Garden","Haiku","Help","History","Housing","Jobs","Jokes"
+
+
+
+
+
+"Accounting",
+"Adminstrative & office jobs",
+"Advertising & Marketing jobs ",
+"Arts,media & Designen jobs",
+"Biothecnology & pharmaceuticals",
+"Community,social Service & nonprofit",
+"Construction,mining & Trades",
+" Educations,Training & library",
+"Employment placement Agencies",
+"Enginneering",
+"Finanicial & Banking",
+"General Labor",
+"Goverment",
+"Hotels&hospitality",
+"Human Resources(HR)",
+"information Technology(IT) ",
+"installation,maintenance & Repair",
+"insurance",
+"internet & ecommerce",
+"Law enforcement & security",
+"Legal & paralegal",
+"Medical & helthcare",
+"Others",
+"Personal Care,spas & fitness",
+"Professional Services",
+"Real Estate ",
+"Resturant & Beverage",
+"Retail & Wholesale",
+"sales",
+"Science",
+"Sports & recreation ",
+"Telecommunications",
+"Television ,film&Entertainment",
+"Trensportation"
+
+
+
+
+
+"Commercial Real Estate",
+"Condos for Sale",
+"Duplexes",
+"Homes for Sale",
+"Land for Sale",
+"Others"
+
+
+
+
+
+
+
+
+
+"City",
+"Addiss Ababa",
+"Hawassa",
+"Adama"
+
+
+
+
+
+
+
+
+
+
+
+
+
+<template id="">
+  <div class="">
+        <mdb-row>
+          <mdb-col sm="4">
+                <mdb-list-group style="margin-top: 20px;">
+                  <mdb-list-group-item :active="true">Marchandise <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in marchandise"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+          </mdb-col>
+          <mdb-col sm="4">
+            <mdb-list-group style="margin-top: 20px;">
+              <mdb-list-group-item :active="true">Discussion Forums <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+              <mdb-list-group-item class="cata-lists" v-for="item in discussionForum"  :key="item">{{item}}</mdb-list-group-item>
+            </mdb-list-group>
+          </mdb-col>
+        </mdb-row>
+        <mdb-row>
+          <mdb-col sm="4">
+                <mdb-list-group style="margin-top: -1320px;">
+                  <mdb-list-group-item :active="true">Services <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in services"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+                <mdb-list-group style="margin-top: 20px;">
+                  <mdb-list-group-item :active="true">Vehicles <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in vehicles"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+          </mdb-col>
+          <mdb-col sm="4">
+                <mdb-list-group style="margin-top: -1870px;">
+                  <mdb-list-group-item :active="true">Construction/ Farm Equipment <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in construction_farm"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+                <mdb-list-group style="margin-top: 20px;">
+                  <mdb-list-group-item :active="true">Community <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in community"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+                <mdb-list-group style="margin-top: -240px;">
+                  <mdb-list-group-item :active="true">Employment <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in employment"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+          </mdb-col>
+        </mdb-row>
+        <mdb-row>
+          <mdb-col sm="4">
+                <mdb-list-group style="margin-top: -2320px;">
+                  <mdb-list-group-item :active="true">Real Estate <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in realstate"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+                <mdb-list-group style="margin-top: 20px;">
+                  <mdb-list-group-item :active="true">Rentals <mdb-icon icon="plus" class="text-right"/></mdb-list-group-item>
+                  <mdb-list-group-item class="cata-lists" v-for="item in rentals"  :key="item">{{item}}</mdb-list-group-item>
+                </mdb-list-group>
+          </mdb-col>
+        </mdb-row>
+  </div>
+</template>
+<script>
+import { mdbNavbar,mdbNavbarBrand,mdbRow,mdbCol,mdbListGroup, mdbListGroupItem,mdbFooter,mdbIcon } from 'mdbvue';
+import Datepicker from 'vuejs-datepicker';
+
+export default {
+components: {
+  mdbNavbar,
+  mdbNavbarBrand,mdbRow,mdbCol,mdbListGroup, mdbListGroupItem,mdbFooter,mdbIcon,Datepicker
+},
+data() {
+  return {
+    modal: false,
+    dateValue: '',
+    marchandise: ["Appliances","Clothing","Collecting/art","Computers","Electronices","Furniture","musical instruments","Helth & beauty","Sporting Goods","Garge/yard sales","Free","other"],
+    vehicles:["Auto parts","Accessories","Boats","Cars","Motorscycles","RVs","Trucks","Vans","other"],
+    rentals:["Apartements","Homes","Rooms for rent","Short term rentals","Vacation rentals"],
+    services:["Automotive","computer Repair","creative","Events","Financial","Home Service","Moving & Labor","Legal","Lessons & Training ","Real Estate Agents","Skilled Trades","Other Businesses"],
+    construction_farm:["Forestry&Farm","Equipments","Garden Supplies","yard","Heavy Equipment","others","Tractors"],
+    community: ["Activities","Artists","Childcare","Classes","General","Groups","Local News","Lost+Found","Missed connection","Musicians","Pets","Politics","Rants & raves","Rideshare","Volunteers"],
+    discussionForum:["Android","Apple","Arts","Atheist","Autos","Beauty","Bikes","Celebs","Comp","Cosmos","Diet","Divorce","Dying","Eco","Feedbk","Film","Fixit","Food","Frugal","Gaming","Garden","Haiku","Help","History","Housing","Jobs","Jokes"
+    ,"Legal","Linux","Manners","Marriage","Money","Music","Open","Outdoor","Parent","Pets","Philos","Photo","Politics","Psych","Recover","Eligion","Rofo","Science","Spirit","Sports","Super","Tax","Travel","Tv","Vegan","Words","Writing"],
+    employment:[
+      "Accounting",
+      "Adminstrative & office jobs",
+      "Advertising & Marketing jobs ",
+      "Arts,media & Designen jobs",
+      "Biothecnology & pharmaceuticals",
+      "Community,social Service & nonprofit",
+      "Construction,mining & Trades",
+      " Educations,Training & library",
+      "Employment placement Agencies",
+      "Enginneering",
+      "Finanicial & Banking",
+      "General Labor",
+      "Goverment",
+      "Hotels&hospitality",
+      "Human Resources(HR)",
+      "information Technology(IT) ",
+      "installation,maintenance & Repair",
+      "insurance",
+      "internet & ecommerce",
+      "Law enforcement & security",
+      "Legal & paralegal",
+      "Medical & helthcare",
+      "Others",
+      "Personal Care,spas & fitness",
+      "Professional Services",
+      "Real Estate ",
+      "Resturant & Beverage",
+      "Retail & Wholesale",
+      "sales",
+      "Science",
+      "Sports & recreation ",
+      "Telecommunications",
+      "Television ,film&Entertainment",
+      "Trensportation"
+    ],
+    realstate: [
+      "Commercial Real Estate",
+      "Condos for Sale",
+      "Duplexes",
+      "Homes for Sale",
+      "Land for Sale",
+      "Others"
+    ],
+    selectedValue: new Date(),
+    state : {
+      date: new Date(2016, 9,  16)
+    }
+  }
+}
+}
+</script>
+<style scopped>
+.cata-lists:hover{
+  background-color: #D3D3D3;
+  color: white;
+  cursor: pointer;
+}
+</style>

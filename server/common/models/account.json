@@ -1,0 +1,77 @@
+{
+  "name": "account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "account_type": {
+      "type": "string",
+      "required": true
+    },
+    "post_count": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "constructionFarms": {
+      "type": "hasMany",
+      "model": "construction_farm",
+      "foreignKey": "account_id"
+    },
+    "discussionForums": {
+      "type": "hasMany",
+      "model": "discussion_forum",
+      "foreignKey": "account_id"
+    },
+    "employments": {
+      "type": "hasMany",
+      "model": "employment",
+      "foreignKey": "account_id"
+    },
+    "marchandises": {
+      "type": "hasMany",
+      "model": "marchandise",
+      "foreignKey": "account_id"
+    },
+    "realEstates": {
+      "type": "hasMany",
+      "model": "real_estate",
+      "foreignKey": "account_id"
+    },
+    "services": {
+      "type": "hasMany",
+      "model": "service",
+      "foreignKey": "account_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
